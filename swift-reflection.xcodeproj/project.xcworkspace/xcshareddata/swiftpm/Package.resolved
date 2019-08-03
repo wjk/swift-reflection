@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Symbolic",
+        "repositoryURL": "https://github.com/llvm-swift/Symbolic.git",
+        "state": {
+          "branch": null,
+          "revision": "c5f4d0fcc699c4a72fdb2478ea17ff4722bf229b",
+          "version": "0.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
