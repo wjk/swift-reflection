@@ -511,12 +511,6 @@
 				DEVELOPMENT_TEAM = 3P242C9ES5;
 				INFOPLIST_FILE = "swift-plugin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-					"@loader_path",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.puredarwin.swift-plugin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -535,12 +529,6 @@
 				DEVELOPMENT_TEAM = 3P242C9ES5;
 				INFOPLIST_FILE = "swift-plugin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-					"@loader_path",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.puredarwin.swift-plugin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
