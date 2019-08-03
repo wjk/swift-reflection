@@ -19,7 +19,7 @@ public func loadPlugin(bundle: Bundle) throws -> PluginProtocol {
 }
 
 public func loadPlugin(sharedLibrary location: URL) throws -> PluginProtocol {
-	let dylib = try SharedObject(object: location, behavior: .now)
+	let dylib = try SharedObject(object: location, behavior: .now, flags: [.noDelete])
 	guard let entryPoint = dylib.function(forSymbol: "ReflectionCreateObject", ofType: PluginEntryPoint.self) else {
 		let userInfo = [NSLocalizedDescriptionKey: "Could not resolve ReflectionCreateObject"]
 		throw NSError(domain: NSOSStatusErrorDomain, code: paramErr, userInfo: userInfo)
