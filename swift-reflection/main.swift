@@ -46,7 +46,8 @@ func main() {
 		exit(1)
 	}
 
-	exit(Int32(plugin.main(arguments: CommandLine.arguments)))
+	let exitCode = plugin.main(arguments: CommandLine.arguments)
+	exit(Int32(exitCode))
 }
 
 main()
