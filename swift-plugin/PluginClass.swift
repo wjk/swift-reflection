@@ -9,6 +9,8 @@
 import Foundation
 import ReflectionCommon
 
+@objc fileprivate class EnsureMetadataLoaded: NSObject {}
+
 public class PluginMain: PluginProtocol {
 	public func main(arguments: [String]) -> Int {
 		if arguments.count > 2 {
