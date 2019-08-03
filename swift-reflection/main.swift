@@ -41,6 +41,7 @@ func main() {
 			plugin = try loadPlugin(sharedLibrary: pluginURL)
 		}
 	} catch {
+		let error = error as NSError
 		print(error.localizedDescription)
 		exit(1)
 	}
